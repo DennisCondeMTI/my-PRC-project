@@ -6,12 +6,13 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('build') {
+            steps {
+                bat 'python --version'
+            }
+        }
     }
-    stage('build') {
-    steps {
-        bat 'python --version'
-    }
-}
+
     post {
         success {
             echo 'Build completed succesfully!'
