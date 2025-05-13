@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                powershell 'python --version'
+                powershell 'dir'
             }
         }
     }
