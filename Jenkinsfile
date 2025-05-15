@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Hello') {
+        stage('PRC') {
             steps {
-                echo 'Hello World'
+                echo 'Laboratorio 04 - CI/CD Basics with Jenkins'
             }
         }
-        stage('Run Python Script') {
+        stage('Build') {
             steps {
-                bat 'python --version'
+                bat 'echo Realizado'
             }
         }
     }
