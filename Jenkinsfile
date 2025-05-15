@@ -6,9 +6,9 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('build') {
+        stage('Run Python Script') {
             steps {
-                powershell 'dir'
+                bat 'python --version'
             }
         }
     }
