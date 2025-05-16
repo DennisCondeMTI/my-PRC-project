@@ -8,6 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
+                bat 'docker build -t my-python-app .'
                 bat 'docker run -p 8000:80 my-python-app'
             }
         }
